@@ -206,7 +206,6 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 ARCH		?= $(CARCH)
 CROSS_COMPILE	?= $(CCACHE) /home/rapturkez/aosp/prebuilts/gcc/linux-x86/x86/x86_64-linaro-gcc-5.3.1/bin/x86_64-linux-
 
-
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
 SRCARCH 	:= $(ARCH)

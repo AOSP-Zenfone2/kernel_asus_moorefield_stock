@@ -16,7 +16,7 @@ echo "Setting Version Number"
 export VER=v$1
 echo "Setting Defconfig"
 export DEFCONFIG=x86_64_moor_defconfig
-echo "Setting bzImage Location For Ael Zen kernel By friedrich420 Of XDA (thanks to eoghan2t7)"
+echo "Setting bzImage Location For ZenX Kernel By Rap_Turkez Of XDA (thanks to eoghan2t7)"
 export BZIMAGE=arch/x86/boot/bzImage
 echo "Enabling Graphite Optimizations"
 export ENABLE_GRAPHITE=true
@@ -41,7 +41,7 @@ else
    make $DEFCONFIG
    sleep 1
 fi
-wmctrl -r :ACTIVE: -N "Compiling AEL Kernel"
+wmctrl -r :ACTIVE: -N "Compiling ZenX Kernel"
 make $EV -j$CPUS
 
 if [ -f $BZIMAGE ];
@@ -67,7 +67,7 @@ echo "Starting Build Process  : done"
 echo "Build complete"
 
 #Kernel Packing
-wmctrl -r :ACTIVE: -N "AEL Kernel Packing"
+wmctrl -r :ACTIVE: -N "ZenX Kernel Packing"
 echo "Starting Packing To Recovery Flashable Zip"
 cd out/
 echo "Removing Old Files"

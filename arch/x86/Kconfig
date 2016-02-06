@@ -918,10 +918,17 @@ config SCHED_MC
 	  making when dealing with multi-core CPU chips at a cost of slightly
 	  increased overhead in some places. If unsure say N here.
 
+
 config ZEN_DECISION
 	bool "Zen Decision: MSM Userspace Handler"
 	depends on SMP && FB
 	default n
+
+config ASMP
+	bool "Multi-core automatic hotplug support"
+	depends on SMP && HOTPLUG_CPU
+	default y
+
 	help
 	  MSM/Qcomm devices have multiple userspace applications that handle
 	  CPU hotplugging and frequency operations.
@@ -959,6 +966,12 @@ config MPDECISION
 	help
 	  The MSM hotplug driver controls on-/offlining of additional cores based
 	  on current cpu load.
+
+config ALUCARD_HOTPLUG
+	bool "Enable alucard-hotplug cpu hotplug driver"
+	default y
+	help
+	  Alucard-hotplug cpu hotplug driver
 
 config CPU_CONCURRENCY
 	bool "CPU ConCurency (CC)"
