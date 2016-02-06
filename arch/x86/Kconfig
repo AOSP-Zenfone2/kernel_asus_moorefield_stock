@@ -919,6 +919,7 @@ config SCHED_MC
 	  increased overhead in some places. If unsure say N here.
 
 
+
 config ZEN_DECISION
 	bool "Zen Decision: MSM Userspace Handler"
 	depends on SMP && FB
@@ -972,6 +973,7 @@ config ALUCARD_HOTPLUG
 	default y
 	help
 	  Alucard-hotplug cpu hotplug driver
+
 
 config CPU_CONCURRENCY
 	bool "CPU ConCurency (CC)"
@@ -2532,4 +2534,8 @@ source "arch/x86/kvm/Kconfig"
 
 source "lib/Kconfig"
 
+<<<<<<< HEAD
 source "arch/x86/kernel/hotplug/Kconfig"
+=======
+source "arch/x86/hotplug/Kconfig"
+>>>>>>> b0acd91... move hotplug drivers to hotplug folder
