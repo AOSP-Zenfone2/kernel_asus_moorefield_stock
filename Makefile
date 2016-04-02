@@ -166,7 +166,7 @@ CCACHE := ccache
 CARCH := x86
 
 #Toolchain
-GCC :=../x86_64-linux-linaro4.9/bin/x86_64-linux-
+GCC :=../x86_64-linaro-gcc-5.3.1/bin/x86_64-linux-
 
 
 
