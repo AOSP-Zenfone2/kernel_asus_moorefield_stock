@@ -2534,8 +2534,7 @@ source "arch/x86/kvm/Kconfig"
 
 source "lib/Kconfig"
 
-<<<<<<< HEAD
 source "arch/x86/kernel/hotplug/Kconfig"
-=======
+
 source "arch/x86/hotplug/Kconfig"
->>>>>>> b0acd91... move hotplug drivers to hotplug folder
+
