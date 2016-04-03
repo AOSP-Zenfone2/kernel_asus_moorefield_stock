@@ -76,8 +76,8 @@ sleep 1
 echo "Copying bzImage"
 mv ../arch/x86/boot/bzImage bzImage
 sleep 1
-echo "Compiling Ael_Zen_"$VER".zip"
-find . -type f -exec zip Ael_Zen_"$VER".zip {} +
+echo "Compiling ZenX_"$VER".zip"
+find . -type f -exec zip ZenX_"$VER".zip {} +
 nowf=$(date +"%T")
 cd ..
 make clean
